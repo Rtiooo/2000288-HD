@@ -1,5 +1,5 @@
 # The planet's display name. If you want to support multiple languages, use bundles instead!
-localizedName: Black Sunshine Rider
+localizedName: 2000288-HD-C
 
 # The mesh of the planet. At least MultiMesh is supported, so you can put multiple
 # NoiseMesh'es to your planet!
@@ -7,21 +7,21 @@ mesh: {
   # Mesh type. Self-explanatory.
   type: NoiseMesh
   # A number used for mesh generation.
-  seed: 69
+  seed: 105
   # Mesh "quality". More divisions = more hexagons.
-  divisions: 4
+  divisions: 7
   # First color to be used.
   color1: a2a2c2
   # Second color to be used.
   color2: 22262b
   # Mesh radius.
-  radius: 0.8
+  radius: 1.6
   # A noise property.
-  octaves: 3
+  octaves: 12
   # A noise property.
-  persistence: 0.8
+  persistence: 0.9
   # Noise scale.
-  scale: 1
+  scale: 2
   # A noise property.
   mag: 1.5
 }
@@ -31,14 +31,14 @@ mesh: {
 # better make sector presets and don't waste your time with this.
 generator: {
   # Mininum amount of asteroids.
-  min: 1
+  min: 2
   # Maximum amount of asteroids.
-  max: 1
+  max: 2
 
   # Noise properties.
-  octaves: 2
+  octaves: 5
   persistence: 0.4
-  scale: 30
+  scale: 40
   mag: 0.4
   thresh: 1
   foct: 3
@@ -47,31 +47,31 @@ generator: {
   fper: 0.6
 
   # Asteroid radius range.
-  radMin: 600
-  radMax: 600
+  radMin: 1000
+  radMax: 1000
 
   # This one is ABSOLUTELY pointless, lmao.
-  stoneChance: 0
+  stoneChance: 0.8
 
   # Terrain generation chances, in order: ice > carbon > beryl > ferric.
   iceChance: 0.5
-  carbonChance: 1
-  berylChance: 0
-  ferricChance: 0
+  carbonChance: 0.5
+  berylChance: 0.2
+  ferricChance: 1
 }
 
 # Make sure this planet is always accessible anytime.
 alwaysUnlocked: true
 # This determines the size of the sector grid.
 # Fun fact: The console will warn you about this "unknown" field, but it also functions properly at the same time.
-sectorSize: 1
+sectorSize: 2
 # Spacing between a parent (this) and satellites.
 orbitSpacing: 1
-orbitRadius: 16
+orbitRadius: 30
 orbitOffset: 180
-orbitTime: 30
+orbitTime: 13
 # Radius of this planet's sphere.
-radius: 1.05
+radius: 3.09
 # Whether to draw the orbit.
 drawOrbit: true
 # Whether this can be landed on.
@@ -79,21 +79,21 @@ accessible: true
 # Toggle day-night cycle.
 updateLighting: false
 # A number used for sector generation. If == -1, planet ID is picked instead.
-sectorSeed: 529
+sectorSeed: 800
 # Whether this planet is blooming.
 bloom: false
 # This is self-explanatory...
 visible: true
 # The color of the planet's icon displayed in top-left dialog.
-iconColor: 29302b
+iconColor: 29180b
 # Another self-explanatory field...
 hasAtmosphere: false
 # Icon's name displayed in top-left dialog.
 icon: commandRally
 # The parent of the planet.
-parent: black-hole-sun
+parent: S15780Wqt317
 # The parent of the whole solar system the planet is in. Affects lighting.
-solarSystem: black-hole-sun
+solarSystem: S15780Wqt317
 # Items not available in this planet. Commented out because itemWhitelist is used instead as seen below.
 #hiddenItems: [
 #  graphite, plastanium, phase-fabric
